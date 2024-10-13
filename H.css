@@ -55,7 +55,7 @@ body {
     color: #666;
   }
 /* Skills Section */
-.skills h2 {
+  .SSkills h2 {
     font-size: 24px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
@@ -73,14 +73,33 @@ body {
     padding: 5px 0;
   }
   
+  .haveskill  h3 {
+    display: flex;
+    align-content: center;
+  }
+  
   
   /* Experience Section */
-  .experience h2 {
+  .Experience h2 {
     font-size: 24px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
   }
+
+  .Experience p {
+    font-size: 18px;
+    font-weight: bold ;
+  }
   
+  .Experience li p {
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 20px; /* ปรับระยะวรรคหน้าเท่ากับ Education */
+    /* หรือใช้ text-indent แทน */
+    /* text-indent: 20px; */
+}
+
+
   
   .job {
     padding: 10px 0;
@@ -94,15 +113,17 @@ body {
   
   
   .job p {
-    font-size: 14px;
-    color: #777;
+    font-size: 18px;
+    
+    color: #000000;
   }
   
   
   .job ul {
-    list-style-type: none;
-    padding: 0;
-  }
+    list-style-type: disc; /* จะแสดงจุดหน้าข้อความ */
+    padding-left: 0 px; /* เพิ่มช่องว่างระหว่างจุดกับข้อความ (ถ้าต้องการ) */
+}
+
   
   
   .job li {
@@ -121,6 +142,7 @@ body {
   
   .education p {
     font-size: 16px;
+    font-weight: normal;
   }
   
   
@@ -142,4 +164,9 @@ body {
   
   footer a:hover {
     text-decoration: underline;
+  }
+
+  /* contact */
+  .contact {
+    text-align: left 20px;
   }
